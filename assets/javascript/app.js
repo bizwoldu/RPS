@@ -9,23 +9,14 @@ const paper_div = document.getElementById("P");
 const scissors_div = document.getElementById("S");
 
 // Initialize Firebase
-// var config = {
-//     apiKey: "AIzaSyDYj-uoClopDBXN1KCW7EyZjF6DSV10n0E",
-//     authDomain: "rps-game-c8fc6.firebaseapp.com",
-//     databaseURL: "https://rps-game-c8fc6.firebaseio.com",
-//     projectId: "rps-game-c8fc6",
-//     storageBucket: "",
-//     messagingSenderId: "332516704285"
-// };
-
 var config = {
-    apiKey: "AIzaSyDvBsIK9yJqqebSGXcbYd6sbhY5teF2tFU",
-    authDomain: "rock-paper-scissors-a9416.firebaseapp.com",
-    databaseURL: "https://rock-paper-scissors-a9416.firebaseio.com",
-    projectId: "rock-paper-scissors-a9416",
+    apiKey: "AIzaSyDYj-uoClopDBXN1KCW7EyZjF6DSV10n0E",
+    authDomain: "rps-game-c8fc6.firebaseapp.com",
+    databaseURL: "https://rps-game-c8fc6.firebaseio.com",
+    projectId: "rps-game-c8fc6",
     storageBucket: "",
-    messagingSenderId: "160392267444"
-  };
+    messagingSenderId: "332516704285"
+};
 
 var playerCount = 0;
 
