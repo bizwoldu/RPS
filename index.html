@@ -5,10 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-        <script>
-               
-         
-        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>RPS-GAME</title>
@@ -19,53 +15,59 @@
     <body>
     <header>
         <h1>Rock Paper Scissors</h1>
-        <form action="/action_page.php" method="get">
-         player name: <input type="text" name="fname"><br>
-        <input type="submit" value="Submit">
+        <form id="player-name-form">
+         player name: <input type="text" name="fname" id="fname"><br>
+        <input type="submit" value="Submit" id="submit-name">
         </form>
-        
+        <div class="reset-form">
+            <button id="reset" type="reset" class="reset">Reset</button>
+        </div>
+
+
         <h6>Score Board</h6>
-            
+
     </header>
      <div class="Score-Board">
-        <div id="Player-Label" class="Badge">Player1</div>
-        <div id="Computer-Label" class="Badge">Player2</div>
+        <div id="player-one-label" class="Badge">Player1</div>
+        <div id="player-two-label" class="Badge">Player2</div>
         <span id="user-Score">0</span>:<span id="computer-Score">0</span>
     </div>
 
     <div class="Result">
         <p>Click On Any Hand To Start!</p>
  </div>
-    <div class="Choices">
-         <div class="Choice"id="R">
+    <div class="choices">
+         <div class="choice" id="R" data-choice="r">
          <img src="assets/images/rock.jpg" alt="">
          </div>
-    <div class="Choice" id="P">
+    <div class="choice" id="P" data-choice="p">
         <img src="assets/images/paper.jpg" alt="">
     </div>
-    <div class="Choice" id="S">
+    <div class="choice" id="S" data-choice="s">
         <img src="assets/images/scissors.jpg" alt="">
     </div>
-    
+
 </div>
-        <div class="Choices2">
-        <div class="Choice2"id="R2">
-    <img src="assets/images/paper.jpg" alt="">
+    <div class="Choices2">
+        <div class="choice2" id="R2" data-choice="r">
+            <img src="assets/images/rock.jpg" alt="">
+        </div>
+        <div class="choice2" id="P2" data-choice="p">
+            <img src="assets/images/paper.jpg" alt="">
+        </div>
+
+        <div class="choice2" id="S2" data-choice="s">
+            <img src="assets/images/scissors.jpg" alt="">
+        </div>
     </div>
 
-    <div class="Choice2" id="P2">
-    <img src="assets/images/rock.jpg" alt="">
-    </div>
-    
-    <div class="Choice2" id="S2">
-    <img src="assets/images/scissors.jpg" alt="">
-</div>
-</div>
- 
 <p id="action-message">Make Your Move Sucka!!</p>
- 
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
- 
+
 </body>
 <footer>
     <div class="form-group">
